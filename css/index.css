@@ -1,0 +1,57 @@
+@import "./base.css";
+
+.slide-show {
+    position: relative;
+}
+
+.img-show {
+    width: 100%;
+    height: auto;
+}
+
+.mask-light {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.45);
+}
+
+.mask-half {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.info-loc {
+    float: left;
+}
+
+.info-contact {
+    float: left;
+    margin-left: 60px;
+}
+
+.img-map {
+    float: right;
+    width: 45%;
+    height: auto;
+}
+
+.img-about {
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+.about-text {
+    float: right;
+    width: 40%;
+    text-align: left;
+}
+
+.ship {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,72 @@
+@import "./base.css";
+
+.menu-instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ff9800;
+}
+
+.menu-category > li {
+    display: inline;   
+}
+
+.menu-category > li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.menu-category > li:not(.selected) {
+    font-size: 18px;
+}
+
+.menu-category > li.selected {
+    font-size: 24px;
+}
+
+.menu-listing {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.menu-listing li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-listing li > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-listing li > div > p {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu-listing li > div.gf {
+    background-color: #29b6f6;
+}
+
+.menu-listing li > div.veg {
+    background-color: #66bb6a;
+}
+
+.menu-listing-left {
+    float: left;
+}
+
+.menu-listing-right {
+    float: right;
+}

@@ -1,0 +1,88 @@
+@import "./font.css";
+@import "./nav.css";
+@import "./footer.css";
+
+body {
+    margin-left: 0px;;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.row-container {
+    padding: 25px 30px;
+    overflow: auto;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-link {
+    width: 250px;
+}
+
+.action-btn,
+.action-btn-no-border {
+    color: #fb8c00;
+    font-size: 24px;
+}
+
+.action-btn {
+    border: 5px solid #fb8c00;
+    border-radius: 20px;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.slide-show {
+    position: relative;
+}
+
+.img-show {
+    width: 100%;
+    height: auto;
+}
+
+.mask-light {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.45);
+}
+
+.mask-half {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.listing-col {
+    padding-left: 0px;
+}
+
+.listing-col > li {
+    font-size: 24px;
+    margin-bottom: 40px;
+    list-style: none;
+}
