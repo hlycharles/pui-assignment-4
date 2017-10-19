@@ -7,41 +7,25 @@
 
 .detail-left > h3 {
     width: 100%;
-    text-align: right;
 }
 
 .price-tag {
     margin-bottom: 30px;
 }
 
-.purchase-container {
+.action-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.num-btn,
-.num-btn-bg {
-    display: inline;
-}
-
-.num-btn {
-    font-size: 30px;
-}
-
-.num-btn-bg {
-    font-size: 40px;
-}
-
-.purchase-num {
-    display: inline;
+.ingredient-btn {
+    float: left;
     margin-left: 50px;
-    margin-right: 50px;
 }
 
 .ingredient-btn {
-    float: right;
+    float: left;
 }
 
 .detail-right {
@@ -72,4 +56,61 @@
 
 .add-cart-container > div {
     margin-bottom: 50px;
+}
+
+.pack-btn {
+    width: 300px;
+}
+
+.choice-container {
+    width: 95%;
+    height: auto;
+}
+
+.pack-pic {
+    float: left;
+    width: 30%;
+    height: 450px;
+    margin: 0px 30px;
+    border: 6px solid #fb8c00;
+    border-radius: 20px;
+}
+
+.pack-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    float: right;
+    width: 55%;
+    height: 450px;
+    margin: 0px 30px;
+}
+
+.pack-detail-row {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pack-detail-row:last-child {
+    margin-bottom: 10px;
+}
+
+.pack-detail-label {
+    width: 200px;
+}
+
+.pack-detail-content {
+    font-weight: normal;
+}
+
+.pack-quantity-btn {
+    color: #424242;
+    width: 150px;
+}
+
+.cart-btn {
+    width: 100%;
+    align-self: flex-end;
 }

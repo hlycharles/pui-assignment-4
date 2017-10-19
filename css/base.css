@@ -39,17 +39,47 @@ a:hover {
 }
 
 .action-btn,
-.action-btn-no-border {
-    color: #fb8c00;
+.action-btn-no-border,
+.action-btn-gray {
     font-size: 24px;
 }
 
-.action-btn {
+.action-btn,
+.action-btn-no-border,
+.action-btn-sqr {
+    color: #fb8c00;    
+}
+
+.action-btn,
+.action-btn-sqr,
+.primary-cell {
     border: 5px solid #fb8c00;
-    border-radius: 20px;
-    width: 250px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.action-btn,
+.primary-cell {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.action-btn-sqr {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.primary-cell {
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-btn-gray {
+    color: #424242;
 }
 
 .slide-show {

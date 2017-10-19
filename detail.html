@@ -27,20 +27,19 @@
                 <h4>Blackberry</h4>
                 <p>Bun Bun Bake Shop welcomes its first customer in 1920 in Pittsburgh.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Num quis congue eros, sit amet iaculis dolor.</p>
-                <h3 class="price-tag">$3</h3>
-                <div class="purchase-container">
-                    <div class="purchase-num-container">
-                        <button class="num-dec-btn num-btn">-</button>
-                        <h4 class="purchase-num">5</h4>
-                        <button class="num-inc-btn num-btn">+</button>
-                    </div>
-                    <button class="action-btn cart-btn">Add to Cart</button>
+                <h1 class="price-tag">$3</h1>
+                <div class="action-container">
+                    <a href="#order">
+                        <button class="action-btn cart-btn">Order Now</button>
+                    </a>
+                    <a href="#ingredient" class="ingredient-link">
+                        <button class="action-btn-no-border ingredient-btn">Ingredients</button>
+                    </a>
                 </div>
-                <button class="action-btn-no-border ingredient-btn">Ingredients</button>
             </div>
             <img src="./img/blackberry.png" class="detail-right" />
         </div>
-        <div class="ingredient-container row-container">
+        <div class="ingredient-container row-container" id="ingredient">
             <h3>INGREDIENTDS</h3>
             <div class="ingredient-listing">
                 <ul class="ingredient-name listing-col">
@@ -57,13 +56,42 @@
                 </ul>
             </div>
         </div>
-        <div class="add-cart-container row-container">
-            <div>
-                <button class="num-dec-btn num-btn-bg">-</button>
-                <h3 class="text-lg purchase-num">5</h3>
-                <button class="num-inc-btn num-btn-bg">+</button>
+        <div class="add-cart-container row-container" id="order">
+            <h3>ORDER</h3>
+            <div class="pack-container">
+                <button class="action-btn-no-border pack-btn">Individual Rolls</button>
+                <button class="action-btn-gray pack-btn">6-pack</button>
+                <button class="action-btn-gray pack-btn">12-pack</button>
             </div>
-            <button class="action-btn cart-btn">Add to Cart</button>
+            <div class="choice-container">
+                <div class="pack-pic">pic</div>
+                <div class="pack-detail-container">
+                    <div class="pack-detail-rows">
+                        <div class="pack-detail-row">
+                            <h4 class="pack-detail-label">Flavors</h4>
+                            <div class="pack-flavor-container">
+                                <div class="pack-flavor-row">
+                                    <h4 class="pack-detail-content">Blackberry</h4>
+                                </div>
+                                <div class="pack-flavor-row">
+                                    <h4 class="pack-detail-content">Blackberry</h4>
+                                </div>
+                                <button class="action-btn-sqr">+</button>
+                            </div>
+                        </div>
+                        <div class="pack-detail-row">
+                            <h4 class="pack-detail-label">Quantity</h4>
+                            <button class="action-btn pack-quantity-btn">2</button>
+                        </div>
+                        <div class="pack-detail-row">
+                            <h4 class="pack-detail-label">Total</h4>
+                            <h4 class="pack-detail-content">3 x 2 = 6</h4>
+                        </div>
+                    </div>
+                    <button class="action-btn cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
         </div>
         <div class="footer">
             <h6>Terms and Services</h6>
