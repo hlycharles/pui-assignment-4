@@ -67,13 +67,21 @@
     height: auto;
 }
 
-.pack-pic {
+.pack-pic-container {
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 30%;
     height: 450px;
     margin: 0px 30px;
     border: 6px solid #fb8c00;
     border-radius: 20px;
+}
+
+.pack-pic-row {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .pack-detail-container {
@@ -103,6 +111,29 @@
 
 .pack-detail-content {
     font-weight: normal;
+}
+
+.pack-flavor-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.remove-btn > img {
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+}
+
+.add-flavor-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-flavor-btn > img {
+    width: 30px;
+    height: 30px;
 }
 
 .pack-quantity-btn {
