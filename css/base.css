@@ -1,6 +1,7 @@
 @import "./font.css";
 @import "./nav.css";
 @import "./footer.css";
+@import "./banner.css";
 
 body {
     margin-left: 0px;;
@@ -8,9 +9,17 @@ body {
     margin-bottom: 0px;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 button {
     background: none;
     border: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 a {

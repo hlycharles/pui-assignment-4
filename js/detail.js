@@ -79,6 +79,7 @@ window.onload = function() {
             flavors: flavors,
         });
         localStorage.setItem("cart", JSON.stringify(currentCart));
+        showBanner("Your order is successfully added to cart");
         render();
     }
 

@@ -157,6 +157,7 @@
     left: 0;
     right: 0;
     background-color: rgba(255, 255, 255, 0.98);
+    animation: fadein 0.3s;
 }
 
 .overlay-row {
@@ -191,4 +192,13 @@
 
 .overlay-btn:first-child {
     text-align: left;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.98;
+    }
 }

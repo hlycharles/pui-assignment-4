@@ -1,0 +1,26 @@
+.banner {
+    position: fixed;
+    padding: 5px 20px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 20px;
+    border: 4px solid #7cb342;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #c5e1a5;
+    animation: fadeout 1.8s;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 0;
+    }
+}
