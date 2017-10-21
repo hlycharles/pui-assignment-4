@@ -177,6 +177,10 @@
     width: 300px;
 }
 
+.overlay-btn-selected {
+    color: #fb8c00;
+}
+
 .overlay-btn-sm {
     width: 200px;
 }

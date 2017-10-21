@@ -13,6 +13,7 @@ const Roll = {
    Original: {
        name: "Original",
        categories: [Category.Original],
+       img: "blackberry-single.png",
    },
    OriginalGF: {
        isGlutenFree: true,
@@ -55,6 +56,7 @@ const Roll = {
    Blackberry: {
        name: "Blackberry",
        categories: [Category.Fruit],
+       img: "blackberry-single.png",
    },
    Cranberry: {
        name: "Cranberry",
@@ -72,4 +74,19 @@ const Roll = {
        name: "Birthday Cake",
        categories: [Category.Cake],
    },
+};
+
+const Pack = {
+    "individual-pack": {
+        name: "individual-pack",
+        price: 3,
+    },
+    "6-pack": {
+        name: "6-pack",
+        price: 15,
+    },
+    "12-pack": {
+        name: "12-pack",
+        price: 28,
+    },
 };

@@ -10,9 +10,9 @@
         <div class="nav">
             <div class="store-name">
                 <h2>BUN BUN BAKE SHOP</h2>
-                <div class="cart-container">
+                <a href="./cart.html" class="cart-container">
                     <img src="./img/shopping-cart.png" />
-                </div>
+                </a>
             </div>
             <div class="menu">
                 <a class="nav-link" href="./index.html">
@@ -41,7 +41,7 @@
             <img src="./img/blackberry.png" class="detail-right" />
         </div>
         <div class="ingredient-container row-container" id="ingredient">
-            <h3>INGREDIENTDS</h3>
+            <h3>INGREDIENTS</h3>
             <div class="ingredient-listing">
                 <ul class="ingredient-name listing-col">
                     <li>Blackberry</li>
@@ -60,9 +60,9 @@
         <div class="add-cart-container row-container" id="order">
             <h3>ORDER</h3>
             <div class="pack-container">
-                <button class="action-btn-no-border pack-btn">Individual Rolls</button>
-                <button class="action-btn-gray pack-btn">6-pack</button>
-                <button class="action-btn-gray pack-btn">12-pack</button>
+                <button class="pack-btn" id="individual-pack">Individual Rolls</button>
+                <button class="pack-btn" id="6-pack">6-pack</button>
+                <button class="pack-btn" id="12-pack">12-pack</button>
             </div>
             <div class="order-container">
                 <div class="pack-pic-container">
@@ -83,31 +83,15 @@
                     <div class="pack-detail-rows">
                         <div class="pack-detail-row">
                             <h4 class="pack-detail-label">Flavors</h4>
-                            <div class="pack-flavor-container">
-                                <div class="pack-flavor-row">
-                                    <h4 class="pack-detail-content">Blackberry</h4>
-                                    <button class="remove-btn">
-                                        <img src="./img/close-btn.png" />
-                                    </button>
-                                </div>
-                                <div class="pack-flavor-row">
-                                    <h4 class="pack-detail-content">Old Fashioned Buttermilk</h4>
-                                    <button class="remove-btn">
-                                        <img src="./img/close-btn.png" />
-                                    </button>
-                                </div>
-                                <button class="action-btn-sqr add-flavor-btn">
-                                    <img src="./img/add-btn.png" />
-                                </button>
-                            </div>
+                            <div class="pack-flavor-container"></div>
                         </div>
                         <div class="pack-detail-row">
                             <h4 class="pack-detail-label">Quantity</h4>
-                            <button class="action-btn pack-quantity-btn">2</button>
+                            <button class="action-btn pack-quantity-btn"></button>
                         </div>
                         <div class="pack-detail-row">
                             <h4 class="pack-detail-label">Total</h4>
-                            <h4 class="pack-detail-content">3 x 2 = 6</h4>
+                            <h4 class="pack-detail-content total"></h4>
                         </div>
                     </div>
                     <button class="action-btn cart-btn">Add to Cart</button>

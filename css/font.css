@@ -79,3 +79,7 @@ a.no-visited {
 button:not(.action-btn) > a:not(.selected):visited {
     color: #424242;
 }
+
+.weight-normal {
+    font-weight: normal;
+}
