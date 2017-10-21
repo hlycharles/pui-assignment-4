@@ -1,19 +1,24 @@
+/* style for shopping cart page */
+
 @import "./base.css";
 
 .cart-title {
     text-align: center;
 }
 
-.cart-info-left {
+.cart-info-item {
     float: left;
     width: 60%;
 }
 
-.cart-info-right {
+.cart-info-price {
     float: right;
     width: 30%;
+    padding: 10px;
+    border-left: 4px solid #fb8c00;
 }
 
+/* section for each item in the cart */
 .item-container {
     padding: 25px;
     width: 80%;
@@ -31,6 +36,7 @@
     margin-bottom: 100px;
 }
 
+/* quantity and price */
 .purchase-info {
     text-align: right;
 }
@@ -62,6 +68,7 @@
     margin-bottom: 30px;
 }
 
+/* contain operations available for each item */
 .item-op {
     display: flex;
     flex-direction: column;
@@ -82,11 +89,6 @@
     width: 30px;
     height: 30px;
     margin-right: 25px;
-}
-
-.cart-info-right {
-    padding: 10px;
-    border-left: 4px solid #fb8c00;
 }
 
 .total-title {

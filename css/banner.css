@@ -1,4 +1,7 @@
+/* banner that can be shown on top of screen */
+
 .banner {
+    /* fix banner at the top of screen */
     position: fixed;
     padding: 5px 20px;
     top: 20px;
@@ -6,11 +9,15 @@
     right: 20px;
     border-radius: 20px;
     border: 4px solid #7cb342;
+
+    /* center content */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: #c5e1a5;
-    animation: fadeout 1.8s;
+
+    /* fade out */
+    animation: fadeout 2s;
 }
 
 @keyframes fadeout {

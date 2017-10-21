@@ -31,6 +31,7 @@ window.onload = function() {
         btn.onclick = () => {
             currentPack = Pack[btn.id];
             if (btn.id === Pack["individual-pack"].name) {
+                // can only select one flavor if buying individual pack
                 flavors = [Roll.Blackberry];
             }
             currentQuantity = 0;
@@ -79,13 +80,17 @@ window.onload = function() {
             flavors: flavors,
         });
         localStorage.setItem("cart", JSON.stringify(currentCart));
-        showBanner("Your order is successfully added to cart");
+        // show banner indicating success
+        showBanner("Your order is successfully added to your cart");
         render();
     }
 
+    // create a layer on the screen showing option items
     function createOverlay(title, items, selectedIndex, colNum, isSparse) {
         const overlayElem = document.createElement("div");
         overlayElem.classList.add("overlay");
+
+        // show title of the options
         const titleContainer = document.createElement("div");
         titleContainer.classList.add("overlay-row");
         if (isSparse) {
@@ -96,16 +101,20 @@ window.onload = function() {
         titleElem.appendChild(titleText);
         titleContainer.appendChild(titleElem);
         overlayElem.appendChild(titleContainer);
+
         for (let i = 0; i < items.length; i += colNum) {
             const rowElem = document.createElement("div");
             rowElem.classList.add("overlay-row");
             if (isSparse) {
+                // make items more compact if only a few choices
                 rowElem.classList.add("overlay-row-shrt");
             }
+
             for (let j = i; j < i + colNum && j < items.length; j++) {
                 const btnElem = document.createElement("button");
                 btnElem.classList.add("overlay-btn")
                 if (j === selectedIndex) {
+                    // current selection
                     btnElem.classList.add("overlay-btn-selected");
                 }
                 if (isSparse) {
@@ -121,6 +130,7 @@ window.onload = function() {
         document.body.appendChild(overlayElem);
     }
 
+    // create a row of pictures showing contents in a pack
     function createPicRow(pics, sizeClass) {
         const rowElem = document.createElement("div");
         rowElem.classList.add("pack-pic-row");
@@ -133,14 +143,18 @@ window.onload = function() {
         return rowElem;
     }
 
+    // show currently selected flavors
     function createFlavorRow(flavor, removable, index) {
         const rowElem = document.createElement("div");
         rowElem.classList.add("pack-flavor-row");
+
         const flavorElem = document.createElement("h4");
         flavorElem.classList.add("pack-detail-content");
         flavorElem.innerHTML = flavor;
         rowElem.appendChild(flavorElem);
+
         if (removable) {
+            // add remove button if flavor is removable
             const btnElem = document.createElement("button");
             btnElem.classList.add("remove-btn");
             btnElem.onclick = () => {
@@ -170,7 +184,7 @@ window.onload = function() {
 
         updateCartIcon();
 
-        // pack buttons
+        // pack choices
         const packBtns = document.getElementsByClassName("pack-btn");
         for (let i = 0; i < packBtns.length; i++) {
             const btn = packBtns[i];
@@ -183,7 +197,7 @@ window.onload = function() {
             }
         }
 
-        // pack quantity button
+        // button to select quantity
         const quantityBtns = document.getElementsByClassName("pack-quantity-btn");
         for (let i = 0; i < quantityBtns.length; i++) {
             quantityBtns[i].innerHTML = availableQuantities[currentQuantity].toString();
@@ -191,12 +205,14 @@ window.onload = function() {
 
         // flavors
         const flavorContainer = document.getElementsByClassName("pack-flavor-container")[0];
+        // remove any rendered flavor
         while (flavorContainer.firstChild != null) {
             flavorContainer.removeChild(flavorContainer.firstChild);
         }
         for (let i = 0; i < flavors.length; i++) {
             flavorContainer.appendChild(createFlavorRow(flavors[i].name, i > 0, i));
         }
+        // can add flavor if buying 6 or 12 packs and have less than maximum flavor number
         if (currentPack.name !== Pack["individual-pack"].name && flavors.length < maxFlavorNum) {
             flavorContainer.appendChild(createAddFlavorButton());
         }

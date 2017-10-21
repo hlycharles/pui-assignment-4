@@ -9,6 +9,7 @@
         <script src="./js/detail.js"></script>
     </header>
     <body>
+        <!-- navigation bar -->
         <div class="nav">
             <div class="store-name">
                 <a href="./index.html">
@@ -28,23 +29,29 @@
             </div>
         </div>
         <div class="detail-container row-container">
+            <!-- detailed information about the product -->
             <div class="detail-left">
                 <h4>Blackberry</h4>
                 <p>The blackberry cinnamon roll is one of the favorites of our customers.</p>
                 <p>We make sure to always use fresh blackberry delivered to us on the same day. We handpick every blackberry before using it in our bakery.</p>
                 <p>As always we promise to use healthy ingredients in every one of our products.</p>
                 <h1 class="price-tag">$3</h1>
+                <!-- actions user can take -->
                 <div class="action-container">
+                    <!-- scroll to order section -->
                     <a href="#order">
-                        <button class="action-btn cart-btn">Order Now</button>
+                        <button class="action-btn">Order Now</button>
                     </a>
+                    <!-- scroll to ingredient section -->
                     <a href="#ingredient" class="ingredient-link">
                         <button class="action-btn-no-border ingredient-btn">Ingredients</button>
                     </a>
                 </div>
             </div>
+            <!-- image of the product -->
             <img src="./img/blackberry.png" class="detail-right" />
         </div>
+        <!-- ingredients -->
         <div class="ingredient-container row-container" id="ingredient">
             <h3>INGREDIENTS</h3>
             <div class="ingredient-listing">
@@ -64,6 +71,7 @@
         </div>
         <div class="add-cart-container row-container" id="order">
             <h3>ORDER</h3>
+            <!-- possible pack choices -->
             <div class="pack-container">
                 <button class="pack-btn" id="individual-pack">Individual Rolls</button>
                 <button class="pack-btn" id="6-pack">6-pack</button>
@@ -74,14 +82,17 @@
                 <div class="pack-detail-container">
                     <div class="pack-detail-rows">
                         <div class="pack-detail-row">
+                            <!-- currently selected flavors -->
                             <h4 class="pack-detail-label">Flavors</h4>
                             <div class="pack-flavor-container"></div>
                         </div>
                         <div class="pack-detail-row">
+                            <!-- quantity to purchase -->
                             <h4 class="pack-detail-label">Quantity</h4>
                             <button class="action-btn pack-quantity-btn"></button>
                         </div>
                         <div class="pack-detail-row">
+                            <!-- total price for this item -->
                             <h4 class="pack-detail-label">Total</h4>
                             <h4 class="pack-detail-content total"></h4>
                         </div>

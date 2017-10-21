@@ -1,34 +1,17 @@
+/* style for home page */
+
 @import "./base.css";
 
 .slide-show {
     position: relative;
 }
 
-.img-show {
-    width: 100%;
-    height: auto;
-}
-
-.mask-light {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(245, 245, 245, 0.45);
-}
-
-.mask-half {
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-}
-
+/* location information */
 .info-loc {
     float: left;
 }
 
+/* contact-information */
 .info-contact {
     float: left;
     margin-left: 60px;

@@ -1,4 +1,4 @@
-// list of roll categories
+// roll categories
 const Category = {
     Original: "Original",
     Fruit: "Fruit", 
@@ -8,7 +8,7 @@ const Category = {
     Cake: "Cake",
 };
 
-// list of roll options
+// roll options
 const Roll = {
    Original: {
        name: "Original",
@@ -64,10 +64,10 @@ const Roll = {
        name: "Strawberry Rhubarb",
        categories: [Category.Fruit],
        // source: http://www.eatdrinkshrink.com/sweets/strawberry-rhubarb-cinnamon-rolls
-       img: "stawberry-rhubarb-single.jpg",
+       img: "strawberry-rhubarb-single.jpg",
    },
    Buttermilk: {
-       name: "Old Fashioned Buttermilk",
+       name: "Buttermilk",
        categories: [Category.Special],
        // source: https://www.hy-vee.com/meal-solutions/recipes/Buttermilk-Cinnamon-Rolls-R6853.aspx
        img: "buttermilk-single.jpg",
@@ -104,6 +104,7 @@ const Roll = {
    },
 };
 
+// pack options 
 const Pack = {
     "individual-pack": {
         name: "individual-pack",

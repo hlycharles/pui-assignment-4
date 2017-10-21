@@ -1,7 +1,9 @@
+/* footer at the bottom of each page */
+
 .footer {
     display: flex;
     background-color: #ffcc80;
     flex-direction: column;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }

@@ -75,6 +75,8 @@ window.onload = function() {
             const itemName = items[i].name;
             const itemListElem = document.createElement("li");
             const linkElem = document.createElement("a");
+
+            // additional information about the product
             const noteElem = document.createElement("div");
             if (!!items[i].isGlutenFree) {
                 noteElem.classList.add("gf");
@@ -88,12 +90,16 @@ window.onload = function() {
                 noteTextElem.appendChild(document.createTextNode("V"));
                 noteElem.appendChild(noteTextElem);
             }
+
             linkElem.setAttribute("href", "./detail.html");
+            // does not show default visited style for links
             linkElem.classList.add("no-visited");
+            
             linkElem.appendChild(document.createTextNode(itemName));
             itemListElem.appendChild(linkElem);
             itemListElem.appendChild(noteElem);
             menuCols[currCol].appendChild(itemListElem);
+
             currCol = (currCol + 1) % menuCols.length;
         }
     }

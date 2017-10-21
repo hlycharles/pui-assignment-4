@@ -1,3 +1,5 @@
+/* shared styles */
+
 @import "./font.css";
 @import "./nav.css";
 @import "./footer.css";
@@ -14,6 +16,7 @@ li:hover {
 }
 
 button {
+    /* remove default button style */
     background: none;
     border: none;
 }
@@ -31,11 +34,13 @@ a:hover {
     cursor: pointer;
 }
 
+/* each row represents a section of information */
 .row-container {
     padding: 25px 30px;
     overflow: auto;
 }
 
+/* vertical flex box with content centered */
 .vertical-container {
     display: flex;
     flex-direction: column;
@@ -73,6 +78,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
+/* square action button */
 .action-btn-sqr {
     height: 50px;
     width: 50px;
@@ -104,6 +110,7 @@ a:hover {
     color: #424242;
 }
 
+/* square picture frames with diffrent sizes */
 .pic-lg {
     width: 200px;
     height: 200px;
@@ -126,6 +133,7 @@ a:hover {
     position: relative;
 }
 
+/* image that fills full width of window */
 .img-show {
     width: 100%;
     height: auto;
@@ -139,6 +147,7 @@ a:hover {
     background-color: rgba(245, 245, 245, 0.45);
 }
 
+/* div at the bottom half of its parent */
 .mask-half {
     position: absolute;
     top: 50%;
