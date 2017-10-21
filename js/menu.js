@@ -31,10 +31,13 @@ window.onload = function() {
         currCategoryElem = showAllItems;
         render();
     }
+
+    updateCartIcon();
     render();
 
 
     function render() {
+
         // render the category currently selected
         for (let i = 0; i < categoryList.children.length; i++) {
             categoryList.children[i].classList.remove("selected");

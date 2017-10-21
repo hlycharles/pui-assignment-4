@@ -167,6 +167,8 @@ window.onload = function() {
 
     function render() {
 
+        updateCartIcon();
+
         // pack buttons
         const packBtns = document.getElementsByClassName("pack-btn");
         for (let i = 0; i < packBtns.length; i++) {
@@ -280,25 +282,6 @@ window.onload = function() {
             const quantity = availableQuantities[currentQuantity];
             const totalPrice = currentPack.price * quantity;
             totals[i].innerHTML = `\$ ${currentPack.price} x ${quantity} = \$ ${totalPrice}`;
-        }
-
-        // update shopping cart
-        const cartElems = document.getElementsByClassName("cart-num-container");
-        for (let i = 0; i < cartElems.length; i++) {
-            cartElems[i].remove();
-        }
-        const storedStr = localStorage.getItem("cart");
-        const cartCount = storedStr == null ? 0 : JSON.parse(storedStr).items.length;
-        if (cartCount > 0) {
-            if (cartElems.length == 0) {
-                const cartNumContainer = document.createElement("div");
-                cartNumContainer.classList.add("cart-num-container");
-                const cartNumElem = document.createElement("p");
-                cartNumElem.classList.add("cart-num");
-                cartNumContainer.appendChild(cartNumElem);
-                document.getElementsByClassName("cart-container")[0].appendChild(cartNumContainer);
-            }
-            document.getElementsByClassName("cart-num")[0].innerHTML = cartCount.toString();
         }
     }
     

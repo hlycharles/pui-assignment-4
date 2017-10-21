@@ -3,6 +3,9 @@
     <header>
         <title>Bun Bun Bake Shop</title>
         <link rel="stylesheet" href="./css/cart.css">
+        <script src="./js/types.js"></script>
+        <script src="./js/cart-num.js"></script>
+        <script src="./js/cart.js"></script>
     </header>
     <body>
         <div class="nav">
@@ -23,40 +26,10 @@
         </div>
         <h3 class="cart-title">Your Cart</h3>
         <div class="cart-info-container row-container">
-            <div class="cart-info-left">
-                <h4>Items: 2</h4>
-                <div class="item-container">
-                    <div class="item-header">
-                        <h3 class="pack-type">Individual Rolls</h3>
-                        <div class="purchase-info">
-                            <h5 class="quantity">Quantity: 2</h5>
-                            <h5 class="unit-price">$3 / Roll</h5>
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div class="item-flavor">
-                            <h5 class="flavor">Blackberry</h5>
-                            <h5 class="flavor">Cranberry</h5>
-                        </div>
-                        <div class="item-op">
-                            <div class="item-remove-container">
-                                <img src="./img/close-btn.png" />
-                                <h5 class="weight-normal">Remove</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="cart-info-left"></div>
             <div class="cart-info-right">
                 <h3 class="total-title">Total</h3>
-                <div class="price-row">
-                    <h5 class="weight-normal">Blackberry</h5>
-                    <h5 class="weight-normal">$6</h5>
-                </div>
-                <div class="price-row">
-                    <h5 class="weight-normal">Blackberry</h5>
-                    <h5 class="weight-normal">$6</h5>
-                </div>
+                <div class="price-container"></div>
                 <hr />
                 <h5 class="total-amount">$18</h5>
             </div>

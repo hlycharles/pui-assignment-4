@@ -107,14 +107,20 @@ const Roll = {
 const Pack = {
     "individual-pack": {
         name: "individual-pack",
+        display: "Individual Rolls",
         price: 3,
+        unit: "Roll",
     },
     "6-pack": {
         name: "6-pack",
+        display: "6-Pack",
         price: 15,
+        unit: "Pack",
     },
     "12-pack": {
         name: "12-pack",
+        display: "12-Pack",
         price: 28,
+        unit: "Pack",
     },
 };
